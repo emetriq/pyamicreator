@@ -1,0 +1,16 @@
+{
+    "ImageId": "ami-05080fcbe553dc897",
+    "MinCount": 1,
+    "MaxCount": 1,
+    "InstanceType": "c5.large",
+    "KeyName": "aws-developer",
+    "SubnetId": "subnet-6218278",
+    "IamInstanceProfile": {
+        "Name": "aws-profile"
+    },
+    "SecurityGroupIds": [
+        "sg-f6218278"
+    ],
+    "InstanceInitiatedShutdownBehavior": "terminate",
+    "UserData": "#!/bin/bash\naws s3 cp s3://mybucket/test/libs /home/ec2-user/ --recursive\npip3 install /home/ec2-user/*any.whl\n"
+}
