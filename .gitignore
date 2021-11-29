@@ -127,3 +127,37 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# python
+*.pyc
+*.pyo
+*.swp
+__pycache__
+
+
+# packaging folders
+/src/tox/version.py
+/build/
+/dist/
+/src/tox.egg-info
+
+# tox working folder
+/.tox
+
+# IDEs
+/.idea
+/.vscode
+/.venv
+# tools
+/.*_cache
+
+# documentation
+/docs/_draft.rst
+
+# release
+credentials.json
+
+pip-wheel-metadata
+.coverage
+test.xml
+src/pyamicreator.egg-info*
