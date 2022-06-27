@@ -6,7 +6,7 @@ pytest==6.2.4
 pytest-cov==2.12.0
 tox==3.23.1
 twine==3.4.1
-virtualenv==20.4.6
+virtualenv==20.15.0
 moto==2.2.0
 setuptools_scm
 wheel
